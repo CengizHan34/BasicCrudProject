@@ -20,14 +20,13 @@ public class PersonRepository {
         return entityManager.unwrap(Session.class);
     }
 
-
     public void createPersons() {
         long startTime = System.currentTimeMillis();
         AtomicInteger counter = new AtomicInteger(0);
-        Person person = new Person("cengiz", "han", true);
+//        Person person = new Person("cengiz", "han", true);
         for (int i = 0; i < 50000; i++) {
             getSession().save(new Person("cengiz", "han", true));
-            if (counter.get()%40 == 0){
+            if (counter.get() % 40 == 0) {
                 getSession().flush();
                 getSession().clear();
             }
