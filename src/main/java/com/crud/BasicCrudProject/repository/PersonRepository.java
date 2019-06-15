@@ -34,8 +34,8 @@ public class PersonRepository {
 
         }
         long endTime = System.currentTimeMillis();
-        long estimatedTime = endTime - startTime; // Geçen süreyi milisaniye cinsinden elde ediyoruz
-        double seconds = (double) estimatedTime / 1000; // saniyeye çevir
+        long estimatedTime = endTime - startTime;
+        double seconds = (double) estimatedTime / 1000;
         System.out.println("++ " + seconds);
     }
 }
