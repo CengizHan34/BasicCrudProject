@@ -20,7 +20,7 @@ public class PersonRepository {
         return entityManager.unwrap(Session.class);
     }
 
-    public void createPersons() {
+    public void createPerson() {
         long startTime = System.currentTimeMillis();
         AtomicInteger counter = new AtomicInteger(0);
 //        Person person = new Person("cengiz", "han", true);

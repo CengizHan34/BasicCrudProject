@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = {"/person"})
+@RequestMapping(value = {"/api/person"})
 public class PersonController {
 
     @Autowired
-    PersonService personService;
+    private PersonService personService;
 
     @Value("${test}")
     private String test;

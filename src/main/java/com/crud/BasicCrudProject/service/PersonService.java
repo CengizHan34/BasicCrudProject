@@ -8,9 +8,9 @@ import org.springframework.stereotype.Service;
 public class PersonService {
 
     @Autowired
-    PersonRepository personRepository;
+    private PersonRepository personRepository;
 
     public void createPerson() {
-        personRepository.createPersons();
+        personRepository.createPerson();
     }
 }
